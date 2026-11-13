@@ -71,7 +71,7 @@ function buildReadme(channels, checked) {
 
 # First 1000 Users: a channel guide for Western indie developers
 
-**${channels.length} channels**, links checked ${checked}. Search and filter them in \`index.html\` next to this file.
+**${channels.length} channels**, links checked ${checked}. **[Search and filter them here](https://xferdino.github.io/first-1000-users-guide/).**
 
 ● rule read on the site · ◐ read via a Reddit mirror · ○ not read on the site, so check it · ⚠ site blocks automated checks, so open it yourself
 
