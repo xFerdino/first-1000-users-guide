@@ -1,0 +1,224 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>First 1000 Users</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column; sticky filter bar (search, chapters, cost); results grouped by chapter, one row per channel. */
+/* ds-allow-hardcode:start - standalone generated page outside the app, with no design system to map to.
+   Every colour is a token below; the px sizes are this page's own small type/space scale. */
+:root {
+  --bg: #f5f7fa;
+  --surface: #ffffff;
+  --ink: #18202e;
+  --muted: #5a6577;
+  --line: #dde2ea;
+  --accent: #2b47c9;
+  --accent-wash: #e8ecfb;
+  --warn: #9a5b00;
+  --warn-wash: #fbf0dd;
+  --f-display: "Bricolage Grotesque", "Inter", system-ui, sans-serif;
+  --f-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #10141c; --surface: #171d28; --ink: #e6eaf2; --muted: #9aa5b8; --line: #2a3242;
+    --accent: #8ea2ff; --accent-wash: #1f2846; --warn: #f0b860; --warn-wash: #33270f; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #10141c; --surface: #171d28; --ink: #e6eaf2; --muted: #9aa5b8; --line: #2a3242;
+  --accent: #8ea2ff; --accent-wash: #1f2846; --warn: #f0b860; --warn-wash: #33270f; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 15px/1.55 var(--f-body);
+}
+.wrap {
+  max-width: 860px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+header.top { padding-block: 40px 20px; }
+h1 {
+  font: 700 clamp(30px, 6vw, 44px)/1.05 var(--f-display); letter-spacing: -0.02em;
+  margin: 0 0 12px; text-wrap: balance;
+}
+.lede { margin: 0; color: var(--muted); max-width: 62ch; }
+.legend {
+  display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 16px;
+  font: 12px/1.4 var(--f-mono); color: var(--muted);
+}
+.legend b { color: var(--ink); font-weight: 500; }
+
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 10; background: var(--bg);
+}
+.bar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(8px); border-bottom: 1px solid var(--line);
+}
+.bar .wrap { display: grid; gap: 10px; padding-block: 12px; }
+.search {
+  width: 100%; font: inherit; color: var(--ink); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px;
+}
+.search:focus-visible, .chip:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.chips::-webkit-scrollbar { display: none; }
+.chip {
+  flex: none; font: 500 13px/1 var(--f-body); color: var(--muted); cursor: pointer;
+  background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 7px 11px;
+}
+.chip:hover { color: var(--ink); border-color: var(--muted); }
+.chip[aria-pressed="true"] { color: var(--accent); background: var(--accent-wash); border-color: transparent; }
+.chip .n { font: 11px var(--f-mono); opacity: 0.7; margin-left: 4px; }
+.row2 { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; justify-content: space-between; }
+.count { font: 12px var(--f-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+
+main { padding-block: 8px 64px; }
+section.ch { margin-top: 32px; }
+section.ch h2 {
+  font: 600 20px/1.2 var(--f-display); margin: 0 0 4px; display: flex; gap: 10px; align-items: baseline;
+}
+section.ch h2 .n { font: 12px var(--f-mono); color: var(--muted); font-weight: 400; }
+.blurb { margin: 0 0 12px; color: var(--muted); font-size: 14px; max-width: 65ch; }
+ul.list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+li.item { display: grid; gap: 4px; padding: 14px 0; border-bottom: 1px solid var(--line); min-width: 0; }
+.head { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline; }
+.name { font-weight: 600; color: var(--ink); text-decoration: none; }
+.name:hover { color: var(--accent); text-decoration: underline; }
+.meta { font: 12px var(--f-mono); color: var(--muted); display: flex; gap: 10px; flex-wrap: wrap; }
+.meta a { color: var(--accent); }
+.cost { text-transform: uppercase; letter-spacing: 0.06em; }
+.blocked { color: var(--warn); background: var(--warn-wash); padding: 1px 6px; border-radius: 4px; }
+.what { margin: 0; overflow-wrap: anywhere; }
+.rule { margin: 0; font-size: 14px; color: var(--muted); overflow-wrap: anywhere; }
+.src { font-family: var(--f-mono); color: var(--ink); margin-right: 6px; }
+.tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.tag { font: 11px var(--f-mono); color: var(--muted); }
+.tag::before { content: "#"; opacity: 0.6; }
+.empty { padding: 48px 0; color: var(--muted); text-align: center; }
+footer { padding-block: 0 48px; color: var(--muted); font-size: 13px; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+/* ds-allow-hardcode:end */
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <h1>First 1000 Users</h1>
+    <p class="lede">Where an indie developer in the US or Europe can put a product in front of its first users. <span id="total"></span> channels; every link was checked on <span id="checked"></span>. Each entry gives the rule that gets posts removed and says where that rule came from.</p>
+    <div class="legend" aria-label="Legend">
+      <span><b>●</b> rule read on the site</span>
+      <span><b>◐</b> read via a Reddit mirror</span>
+      <span><b>○</b> not read on the site, check first</span>
+      <span><b class="blocked">blocks bots</b> open it yourself</span>
+    </div>
+  </div>
+</header>
+
+<div class="bar">
+  <div class="wrap">
+    <label for="q" class="visually-hidden" hidden>Search channels</label>
+    <input id="q" class="search" type="search" placeholder="Search: android, anki, free, backlink, newsletter…" autocomplete="off">
+    <div class="chips" id="chapters" role="group" aria-label="Chapter"></div>
+    <div class="row2">
+      <div class="chips" id="costs" role="group" aria-label="Cost"></div>
+      <span class="count" id="count" aria-live="polite"></span>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" id="results"></main>
+<footer class="wrap">Built from <code>channels.json</code> by <code>build.mjs</code>. Inspired by 1000UserGuide; the Chinese-market sections and generic SEO directories were left out.</footer>
+
+<script>
+const DATA = /*__DATA__*/null;
+const SRC = { site: "●", mirror: "◐", memory: "○" };
+const SRC_LABEL = { site: "Rule read on the site", mirror: "Rule read via a Reddit mirror", memory: "Rule not read on the site; check first" };
+const state = { q: "", chapter: "all", cost: "all" };
+let saved = null;
+try { saved = JSON.parse(localStorage.getItem("f1k-filters") || "null"); } catch (e) {}
+if (saved) Object.assign(state, saved);
+
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+$("total").textContent = DATA.channels.length;
+$("checked").textContent = DATA.checked;
+$("q").value = state.q;
+
+function chip(label, n, pressed, onClick) {
+  const b = el("button", "chip", label);
+  b.type = "button";
+  b.setAttribute("aria-pressed", String(pressed));
+  if (n != null) b.append(el("span", "n", String(n)));
+  b.addEventListener("click", onClick);
+  return b;
+}
+
+function matches(c) {
+  if (state.chapter !== "all" && c.chapter !== state.chapter) return false;
+  if (state.cost !== "all" && c.cost !== state.cost) return false;
+  if (!state.q) return true;
+  const hay = [c.name, c.what, c.rules, c.cost, c.chapter, ...c.tags].join(" ").toLowerCase();
+  return state.q.toLowerCase().split(/\s+/).filter(Boolean).every((w) => hay.includes(w));
+}
+
+function render() {
+  try { localStorage.setItem("f1k-filters", JSON.stringify(state)); } catch (e) {}
+  const hits = DATA.channels.filter(matches);
+
+  const chapters = $("chapters"); chapters.replaceChildren();
+  chapters.append(chip("All", DATA.channels.length, state.chapter === "all", () => { state.chapter = "all"; render(); }));
+  for (const [key, title] of DATA.chapters) {
+    const n = DATA.channels.filter((c) => c.chapter === key).length;
+    chapters.append(chip(title, n, state.chapter === key, () => { state.chapter = key; render(); }));
+  }
+  const costs = $("costs"); costs.replaceChildren();
+  for (const k of ["all", "free", "freemium", "paid"]) {
+    costs.append(chip(k === "all" ? "Any cost" : k[0].toUpperCase() + k.slice(1), null, state.cost === k, () => { state.cost = k; render(); }));
+  }
+  $("count").textContent = `${hits.length} of ${DATA.channels.length}`;
+
+  const out = $("results"); out.replaceChildren();
+  if (!hits.length) { out.append(el("p", "empty", "No channel matches. Clear the search or pick another chapter.")); return; }
+  for (const [key, title, blurb] of DATA.chapters) {
+    const list = hits.filter((c) => c.chapter === key).sort((a, b) => a.name.localeCompare(b.name));
+    if (!list.length) continue;
+    const sec = el("section", "ch");
+    const h = el("h2", null, title); h.append(el("span", "n", String(list.length)));
+    sec.append(h, el("p", "blurb", blurb));
+    const ul = el("ul", "list");
+    for (const c of list) {
+      const li = el("li", "item");
+      const head = el("div", "head");
+      const a = el("a", "name", c.name); a.href = c.url; a.target = "_blank"; a.rel = "noopener";
+      const meta = el("span", "meta");
+      meta.append(el("span", "cost", c.cost));
+      if (c.submitUrl && c.submitUrl !== c.url) {
+        const s = el("a", null, "submit ↗"); s.href = c.submitUrl; s.target = "_blank"; s.rel = "noopener"; meta.append(s);
+      }
+      if (c.status === "blocked") meta.append(el("span", "blocked", "blocks bots"));
+      head.append(a, meta);
+      const rule = el("p", "rule");
+      const mark = el("span", "src", SRC[c.source]); mark.title = SRC_LABEL[c.source]; mark.setAttribute("aria-label", SRC_LABEL[c.source]);
+      rule.append(mark, c.rules);
+      const tags = el("div", "tags");
+      for (const t of c.tags) tags.append(el("span", "tag", t));
+      li.append(head, el("p", "what", c.what), rule, tags);
+      ul.append(li);
+    }
+    sec.append(ul);
+    out.append(sec);
+  }
+}
+
+$("q").addEventListener("input", (e) => { state.q = e.target.value.trim(); render(); });
+render();
+</script>
