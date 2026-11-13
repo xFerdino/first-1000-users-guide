@@ -2,14 +2,14 @@
 
 # First 1000 Users: a channel guide for Western indie developers
 
-**192 channels**, links checked 2026-11-13. **[Search and filter them here](https://xferdino.github.io/first-1000-users-guide/).**
+**173 channels**, links checked 2026-11-13. **[Search and filter them here](https://xferdino.github.io/first-1000-users-guide/).**
 
 ● rule read on the site · ◐ read via a Reddit mirror · ○ not read on the site, so check it · ⚠ site blocks automated checks, so open it yourself
 
 - [How to use this guide](#how-to-use-this-guide)
 - [Launch platforms](#launch-platforms) (17)
-- [Communities and forums](#communities-and-forums) (24)
-- [Reddit](#reddit) (39)
+- [Communities and forums](#communities-and-forums) (17)
+- [Reddit](#reddit) (27)
 - [Social and build-in-public](#social-and-build-in-public) (10)
 - [Directories and "alternative to" sites](#directories-and-alternative-to-sites) (18)
 - [AI tool directories](#ai-tool-directories) (14)
@@ -114,14 +114,8 @@ Daily and weekly launch boards. Most now run a free queue that takes weeks, plus
 
 ## Communities and forums
 
-Places where developers and learners talk. Here you earn attention by writing something useful, not by posting a link.
+Places where developers and makers talk. Here you earn attention by writing something useful, not by posting a link.
 
-- **[Anki Forums](https://forums.ankiweb.net/)** · free  
-  Official Anki forum, where add-on developers and power users gather.  
-  ○ *About Anki; promote only things that work with Anki, such as add-ons.*
-- **[AnkiWeb shared decks](https://ankiweb.net/shared/decks)** · free  
-  Anki's shared deck library; good decks earn steady downloads and a link.  
-  ○ *Decks must be your own work and must not be ads.*
 - **[Awesome lists](https://github.com/sindresorhus/awesome)** · free  
   Curated GitHub lists by topic; a pull request adding your project to the right list brings steady visitors.  
   ○ *Each list has contribution guidelines; most want open-source or a clear free tier.*
@@ -131,9 +125,6 @@ Places where developers and learners talk. Here you earn attention by writing so
 - **[DEV Community](https://dev.to/)** · free · [submit](https://dev.to/new)  
   Large developer blogging platform; technical write-ups about how you built something rank well in search.  
   ● *Posting is free, but content must not exist mainly to promote or to build backlinks.*
-- **[FSRS project (open-spaced-repetition)](https://github.com/open-spaced-repetition)** · free · [submit](https://github.com/open-spaced-repetition/awesome-fsrs)  
-  Home of the FSRS algorithm; its awesome-fsrs list names the apps that use it.  
-  ● *Suggest an app by issue or pull request. Entries are long and specific: which FSRS version and library, whether parameters are fitted, and what an Anki import keeps.*
 - **[GitHub](https://github.com/)** · free · [submit](https://github.com/new)  
   An open-source repo with a clear README is a channel in itself; trending repos get daily traffic.  
   ○ *No rules for your own repo; don't spam other repos' issues.*
@@ -146,21 +137,12 @@ Places where developers and learners talk. Here you earn attention by writing so
 - **[Hashnode](https://hashnode.com/)** · free  
   Developer blog platform with a shared feed; you can use your own domain.  
   ○ *Write technical articles; pure ads are removed.*
-- **[HTLAL / Language Learners Forum](https://forum.language-learners.org/)** ⚠ · free  
-  Long-running forum of serious polyglots.  
-  ○ *A dedicated section exists for resources; disclose that you made it.*
 - **[Indie Hackers](https://www.indiehackers.com/)** ⚠ · free  
   The main community for bootstrapped founders; revenue stories and milestone posts do well.  
   ○ *Self-promotion is fine when the post teaches something; bare links get buried.*
-- **[Language Learning Stack Exchange](https://languagelearning.stackexchange.com/)** · free  
-  Q&A on how to learn languages; answers about SRS can mention tools.  
-  ○ *Disclose affiliation in every answer that names your app.*
 - **[Lemmy (programming communities)](https://join-lemmy.org/)** · free · [submit](https://join-lemmy.org/instances)  
   Federated Reddit alternative; communities like programming@programming.dev take project posts.  
   ○ *Each community and instance has its own rules.*
-- **[Lemmy language-learning communities](https://lemmy.world/)** ⚠ · free  
-  Fediverse instance with language-learning communities.  
-  ○ *Community rules vary.*
 - **[Lobsters](https://lobste.rs/)** · free · [submit](https://lobste.rs/about)  
   Invite-only, Hacker-News-like site for programmers.  
   ● *Invite only. Self-promotion must stay under a quarter of your stories and comments over the past year, and accounts younger than 70 days can't post their own work.*
@@ -170,9 +152,6 @@ Places where developers and learners talk. Here you earn attention by writing so
 - **[Quora](https://www.quora.com/)** ⚠ · free  
   Answer "what's the best app for…" questions; old answers keep sending search traffic.  
   ○ *Disclose that it's your product; spammy answers get collapsed.*
-- **[Refold community](https://refold.la/)** · freemium  
-  Large immersion-learning community with heavy Anki use.  
-  ○ *Community rules apply; promotion is not allowed without permission.*
 - **[Show HN (Hacker News)](https://news.ycombinator.com/showhn.html)** · free · [submit](https://news.ycombinator.com/submit)  
   The Show HN section of Hacker News; one good post can bring tens of thousands of technical visitors.  
   ● *Must be something people can try now. Landing pages, sign-up pages, newsletters and fundraisers are off-topic. Title starts with "Show HN". Don't ask friends to upvote.*
@@ -205,12 +184,6 @@ Each subreddit sets its own self-promotion rules, and many now push developers i
 - **[r/AndroidGaming](https://www.reddit.com/r/AndroidGaming/)** ⚠ · free  
   Android games only; developers can post on set days.  
   ○ *Games only; follow the developer-day schedule.*
-- **[r/Anki](https://www.reddit.com/r/Anki/)** ⚠ · free  
-  Anki users; very interested in FSRS, imports and alternatives that keep their data.  
-  ◐ *Self-promotion (rule 3) and market research (rule 5) get extra scrutiny; since February 2026 AI-related posts face a higher bar and mods suggest r/AnkiAI. Disclose if your project was largely AI-built.*
-- **[r/AnkiAI](https://www.reddit.com/r/AnkiAI/)** ⚠ · free  
-  Where r/Anki's moderators send AI-related flashcard posts.  
-  ◐ *AI and flashcard tools are on-topic; read the sidebar before posting.*
 - **[r/AppHookup](https://www.reddit.com/r/AppHookup/)** ⚠ · free  
   Deals on paid apps; a launch discount posted here can bring a rush of installs.  
   ○ *Deals only (free or discounted paid apps); developers may post their own deals following the format.*
@@ -232,15 +205,6 @@ Each subreddit sets its own self-promotion rules, and many now push developers i
 - **[r/EntrepreneurRideAlong](https://www.reddit.com/r/EntrepreneurRideAlong/)** ⚠ · free  
   Follow-along journeys; detailed progress posts work here.  
   ○ *Posts must share real numbers or lessons, not just a link.*
-- **[r/French](https://www.reddit.com/r/French/)** ⚠ · free  
-  Community for learners of French.  
-  ○ *Self-promotion is limited; read the rules first.*
-- **[r/German](https://www.reddit.com/r/German/)** ⚠ · free  
-  Community for learners of German.  
-  ○ *Strict on self-promotion; read the rules first.*
-- **[r/GetStudying](https://www.reddit.com/r/GetStudying/)** ⚠ · free  
-  Students looking for study methods and tools.  
-  ○ *Self-promotion is restricted.*
 - **[r/IMadeThis](https://www.reddit.com/r/IMadeThis/)** ⚠ · free  
   Show anything you made, software or not.  
   ○ *Your own work only.*
@@ -253,33 +217,15 @@ Each subreddit sets its own self-promotion rules, and many now push developers i
 - **[r/iosapps](https://www.reddit.com/r/iosapps/)** ⚠ · free  
   iOS users looking for new apps.  
   ○ *Developer posts need the right flair; follow posting frequency limits.*
-- **[r/italianlearning](https://www.reddit.com/r/italianlearning/)** ⚠ · free  
-  Community for learners of Italian.  
-  ○ *Read the rules before posting tools.*
-- **[r/languagelearning](https://www.reddit.com/r/languagelearning/)** ⚠ · free  
-  The main language-learning community, more than three million members.  
-  ◐ *Limited self-promotion is tolerated if you're upfront about being the maker; posts in the stickied "Share Your Resources" thread don't count toward your limit. Read the wiki's rules_for_promotion first.*
-- **[r/LearnJapanese](https://www.reddit.com/r/LearnJapanese/)** ⚠ · free  
-  Large Japanese-learning community with heavy SRS use.  
-  ○ *Self-promotion is restricted to specific threads.*
-- **[r/learnpolish](https://www.reddit.com/r/learnpolish/)** ⚠ · free  
-  Community for learners of Polish.  
-  ○ *Read the rules before posting tools.*
 - **[r/macapps](https://www.reddit.com/r/macapps/)** ⚠ · free  
   Mac users looking for apps.  
   ○ *Developers must disclose and follow the self-promotion rules.*
-- **[r/medicalschoolanki](https://www.reddit.com/r/medicalschoolanki/)** ⚠ · free  
-  Medical students who live in Anki; large decks such as AnKing and Zanki.  
-  ○ *Tool posts must be relevant to med school studying.*
 - **[r/microsaas](https://www.reddit.com/r/microsaas/)** ⚠ · free  
   Small SaaS builders sharing products and numbers.  
   ○ *Self-promotion is fine with context.*
 - **[r/opensource](https://www.reddit.com/r/opensource/)** ⚠ · free  
   Share open-source projects.  
   ○ *Project must be open source with a licence.*
-- **[r/Portuguese](https://www.reddit.com/r/Portuguese/)** ⚠ · free  
-  Community for learners of Portuguese.  
-  ○ *Read the rules before posting tools.*
 - **[r/productivity](https://www.reddit.com/r/productivity/)** ⚠ · free  
   Large productivity community; strict about self-promotion.  
   ○ *Self-promotion only in the designated thread.*
@@ -301,9 +247,6 @@ Each subreddit sets its own self-promotion rules, and many now push developers i
 - **[r/smallbusiness](https://www.reddit.com/r/smallbusiness/)** ⚠ · free  
   Small-business owners; good if you sell to them.  
   ○ *No self-promotion outside the designated threads.*
-- **[r/Spanish](https://www.reddit.com/r/Spanish/)** ⚠ · free  
-  Community for learners of Spanish.  
-  ○ *Self-promotion is limited; read the rules first.*
 - **[r/startups](https://www.reddit.com/r/startups/)** ⚠ · free  
   Founders' discussion; promotion only in the weekly share thread.  
   ○ *No self-promotion outside the pinned weekly "Share your startup" thread.*
@@ -331,13 +274,13 @@ Your own audience, built post by post. Slow to start, and the only channel you o
   Federated network; strong for open-source and privacy-minded products.  
   ○ *Instance rules vary; hashtags are the only discovery, so use them.*
 - **[Pinterest](https://www.pinterest.com/)** · free  
-  Visual search engine; pins with study tips or templates last for months.  
+  Visual search engine; useful pins such as tips, templates or checklists keep sending visitors for months.  
   ○ *No promotion rule.*
 - **[Threads](https://www.threads.net/)** · free  
   Meta's text network, with a broad non-technical audience.  
   ○ *No promotion rule.*
 - **[TikTok](https://www.tiktok.com/)** · free  
-  Short video; consumer and learning apps can go viral with a simple demo.  
+  Short video; consumer apps can go viral with a simple demo.  
   ○ *No promotion rule; native-looking content outperforms ads.*
 - **[X (Twitter)](https://x.com/)** · free  
   Still the centre of the build-in-public crowd; use #buildinpublic and reply to people in your niche.  
@@ -593,7 +536,7 @@ Discord, Slack and Telegram groups. Small, warm and slow; good for first testers
   Large Discord for React developers.  
   ○ *Share projects only in the dedicated channel.*
 - **[Telegram groups](https://telegram.org/)** · free  
-  Run your own user group; many European language-learning groups live here.  
+  Run your own user group; Telegram is widely used in many European countries.  
   ○ *Group rules vary; never cross-post spam.*
 - **[Women Make](https://womenmake.com/)** · paid  
   Community for women makers.  
@@ -676,7 +619,7 @@ Local-language press and forums. A small market where a newcomer can still get n
   The main Dutch tech site and forum.  
   ○ *Forum promotion only in the right section.*
 - **[Wykop](https://wykop.pl/)** · free  
-  Poland's Reddit-like site; tags such as #programowanie and #naukajezykow reach builders and learners.  
+  Poland's Reddit-like site; tags such as #programowanie and #technologia reach Polish builders and tech readers.  
   ○ *Self-promotion is tolerated when you disclose and engage; spam is buried fast.*
 - **[Xataka](https://www.xataka.com/)** · free  
   Large Spanish tech site.  

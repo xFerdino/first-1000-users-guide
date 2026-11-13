@@ -10,7 +10,7 @@ const read = (f) => readFileSync(new URL(f, dir), "utf8");
 
 export const CHAPTERS = [
   ["launch", "Launch platforms", "Daily and weekly launch boards. Most now run a free queue that takes weeks, plus a paid lane; many free listings need a backlink."],
-  ["communities", "Communities and forums", "Places where developers and learners talk. Here you earn attention by writing something useful, not by posting a link."],
+  ["communities", "Communities and forums", "Places where developers and makers talk. Here you earn attention by writing something useful, not by posting a link."],
   ["reddit", "Reddit", "Each subreddit sets its own self-promotion rules, and many now push developers into one weekly thread or a sister sub. Reddit blocks automated readers, so these rules come from mirror sites or memory. Open the sidebar before you post."],
   ["social", "Social and build-in-public", "Your own audience, built post by post. Slow to start, and the only channel you own."],
   ["directories", "Directories and \"alternative to\" sites", "Slow, but they bring search traffic for years. \"Alternative to\" sites catch people at the moment they leave a competitor."],

@@ -913,181 +913,6 @@
  },
  {
   "chapter": "reddit",
-  "name": "r/languagelearning",
-  "url": "https://www.reddit.com/r/languagelearning/",
-  "tags": [
-   "reddit",
-   "language-learning",
-   "education"
-  ],
-  "cost": "free",
-  "what": "The main language-learning community, more than three million members.",
-  "rules": "Limited self-promotion is tolerated if you're upfront about being the maker; posts in the stickied \"Share Your Resources\" thread don't count toward your limit. Read the wiki's rules_for_promotion first.",
-  "status": "blocked",
-  "checked": "2026-11-13",
-  "source": "mirror"
- },
- {
-  "chapter": "reddit",
-  "name": "r/Anki",
-  "url": "https://www.reddit.com/r/Anki/",
-  "tags": [
-   "reddit",
-   "spaced-repetition",
-   "education",
-   "language-learning"
-  ],
-  "cost": "free",
-  "what": "Anki users; very interested in FSRS, imports and alternatives that keep their data.",
-  "rules": "Self-promotion (rule 3) and market research (rule 5) get extra scrutiny; since February 2026 AI-related posts face a higher bar and mods suggest r/AnkiAI. Disclose if your project was largely AI-built.",
-  "status": "blocked",
-  "checked": "2026-11-13",
-  "source": "mirror"
- },
- {
-  "chapter": "reddit",
-  "name": "r/medicalschoolanki",
-  "url": "https://www.reddit.com/r/medicalschoolanki/",
-  "tags": [
-   "reddit",
-   "spaced-repetition",
-   "education"
-  ],
-  "cost": "free",
-  "what": "Medical students who live in Anki; large decks such as AnKing and Zanki.",
-  "rules": "Tool posts must be relevant to med school studying.",
-  "status": "blocked",
-  "checked": "2026-11-13",
-  "source": "memory"
- },
- {
-  "chapter": "reddit",
-  "name": "r/LearnJapanese",
-  "url": "https://www.reddit.com/r/LearnJapanese/",
-  "tags": [
-   "reddit",
-   "language-learning"
-  ],
-  "cost": "free",
-  "what": "Large Japanese-learning community with heavy SRS use.",
-  "rules": "Self-promotion is restricted to specific threads.",
-  "status": "blocked",
-  "checked": "2026-11-13",
-  "source": "memory"
- },
- {
-  "chapter": "reddit",
-  "name": "r/German",
-  "url": "https://www.reddit.com/r/German/",
-  "tags": [
-   "reddit",
-   "language-learning",
-   "europe"
-  ],
-  "cost": "free",
-  "what": "Community for learners of German.",
-  "rules": "Strict on self-promotion; read the rules first.",
-  "status": "blocked",
-  "checked": "2026-11-13",
-  "source": "memory"
- },
- {
-  "chapter": "reddit",
-  "name": "r/French",
-  "url": "https://www.reddit.com/r/French/",
-  "tags": [
-   "reddit",
-   "language-learning",
-   "europe"
-  ],
-  "cost": "free",
-  "what": "Community for learners of French.",
-  "rules": "Self-promotion is limited; read the rules first.",
-  "status": "blocked",
-  "checked": "2026-11-13",
-  "source": "memory"
- },
- {
-  "chapter": "reddit",
-  "name": "r/Spanish",
-  "url": "https://www.reddit.com/r/Spanish/",
-  "tags": [
-   "reddit",
-   "language-learning",
-   "europe"
-  ],
-  "cost": "free",
-  "what": "Community for learners of Spanish.",
-  "rules": "Self-promotion is limited; read the rules first.",
-  "status": "blocked",
-  "checked": "2026-11-13",
-  "source": "memory"
- },
- {
-  "chapter": "reddit",
-  "name": "r/italianlearning",
-  "url": "https://www.reddit.com/r/italianlearning/",
-  "tags": [
-   "reddit",
-   "language-learning",
-   "europe"
-  ],
-  "cost": "free",
-  "what": "Community for learners of Italian.",
-  "rules": "Read the rules before posting tools.",
-  "status": "blocked",
-  "checked": "2026-11-13",
-  "source": "memory"
- },
- {
-  "chapter": "reddit",
-  "name": "r/Portuguese",
-  "url": "https://www.reddit.com/r/Portuguese/",
-  "tags": [
-   "reddit",
-   "language-learning",
-   "europe"
-  ],
-  "cost": "free",
-  "what": "Community for learners of Portuguese.",
-  "rules": "Read the rules before posting tools.",
-  "status": "blocked",
-  "checked": "2026-11-13",
-  "source": "memory"
- },
- {
-  "chapter": "reddit",
-  "name": "r/learnpolish",
-  "url": "https://www.reddit.com/r/learnpolish/",
-  "tags": [
-   "reddit",
-   "language-learning",
-   "europe"
-  ],
-  "cost": "free",
-  "what": "Community for learners of Polish.",
-  "rules": "Read the rules before posting tools.",
-  "status": "blocked",
-  "checked": "2026-11-13",
-  "source": "memory"
- },
- {
-  "chapter": "reddit",
-  "name": "r/GetStudying",
-  "url": "https://www.reddit.com/r/GetStudying/",
-  "tags": [
-   "reddit",
-   "education"
-  ],
-  "cost": "free",
-  "what": "Students looking for study methods and tools.",
-  "rules": "Self-promotion is restricted.",
-  "status": "blocked",
-  "checked": "2026-11-13",
-  "source": "memory"
- },
- {
-  "chapter": "reddit",
   "name": "r/AndroidGaming",
   "url": "https://www.reddit.com/r/AndroidGaming/",
   "tags": [
@@ -1234,7 +1059,7 @@
    "consumer"
   ],
   "cost": "free",
-  "what": "Short video; consumer and learning apps can go viral with a simple demo.",
+  "what": "Short video; consumer apps can go viral with a simple demo.",
   "rules": "No promotion rule; native-looking content outperforms ads.",
   "status": "ok",
   "checked": "2026-11-13",
@@ -1266,7 +1091,7 @@
    "consumer"
   ],
   "cost": "free",
-  "what": "Visual search engine; pins with study tips or templates last for months.",
+  "what": "Visual search engine; useful pins such as tips, templates or checklists keep sending visitors for months.",
   "rules": "No promotion rule.",
   "status": "ok",
   "checked": "2026-11-13",
@@ -2477,7 +2302,7 @@
    "community"
   ],
   "cost": "free",
-  "what": "Run your own user group; many European language-learning groups live here.",
+  "what": "Run your own user group; Telegram is widely used in many European countries.",
   "rules": "Group rules vary; never cross-post spam.",
   "status": "ok",
   "checked": "2026-11-13",
@@ -2807,7 +2632,7 @@
    "forum"
   ],
   "cost": "free",
-  "what": "Poland's Reddit-like site; tags such as #programowanie and #naukajezykow reach builders and learners.",
+  "what": "Poland's Reddit-like site; tags such as #programowanie and #technologia reach Polish builders and tech readers.",
   "rules": "Self-promotion is tolerated when you disclose and engage; spam is buried fast.",
   "status": "ok",
   "checked": "2026-11-13",
@@ -2988,122 +2813,6 @@
   "source": "memory"
  },
  {
-  "chapter": "communities",
-  "name": "FSRS project (open-spaced-repetition)",
-  "url": "https://github.com/open-spaced-repetition",
-  "submitUrl": "https://github.com/open-spaced-repetition/awesome-fsrs",
-  "tags": [
-   "spaced-repetition",
-   "open-source",
-   "developer",
-   "education"
-  ],
-  "cost": "free",
-  "what": "Home of the FSRS algorithm; its awesome-fsrs list names the apps that use it.",
-  "rules": "Suggest an app by issue or pull request. Entries are long and specific: which FSRS version and library, whether parameters are fitted, and what an Anki import keeps.",
-  "status": "ok",
-  "checked": "2026-11-13",
-  "source": "site"
- },
- {
-  "chapter": "communities",
-  "name": "Anki Forums",
-  "url": "https://forums.ankiweb.net/",
-  "submitUrl": "https://forums.ankiweb.net/",
-  "tags": [
-   "spaced-repetition",
-   "education",
-   "forum"
-  ],
-  "cost": "free",
-  "what": "Official Anki forum, where add-on developers and power users gather.",
-  "rules": "About Anki; promote only things that work with Anki, such as add-ons.",
-  "status": "ok",
-  "checked": "2026-11-13",
-  "source": "memory"
- },
- {
-  "chapter": "communities",
-  "name": "AnkiWeb shared decks",
-  "url": "https://ankiweb.net/shared/decks",
-  "submitUrl": "https://ankiweb.net/shared/decks",
-  "tags": [
-   "spaced-repetition",
-   "education",
-   "language-learning"
-  ],
-  "cost": "free",
-  "what": "Anki's shared deck library; good decks earn steady downloads and a link.",
-  "rules": "Decks must be your own work and must not be ads.",
-  "status": "ok",
-  "checked": "2026-11-13",
-  "source": "memory"
- },
- {
-  "chapter": "communities",
-  "name": "Language Learning Stack Exchange",
-  "url": "https://languagelearning.stackexchange.com/",
-  "submitUrl": "https://languagelearning.stackexchange.com/",
-  "tags": [
-   "language-learning",
-   "q-and-a"
-  ],
-  "cost": "free",
-  "what": "Q&A on how to learn languages; answers about SRS can mention tools.",
-  "rules": "Disclose affiliation in every answer that names your app.",
-  "status": "ok",
-  "checked": "2026-11-13",
-  "source": "memory"
- },
- {
-  "chapter": "communities",
-  "name": "Refold community",
-  "url": "https://refold.la/",
-  "submitUrl": "https://refold.la/",
-  "tags": [
-   "language-learning",
-   "community",
-   "spaced-repetition"
-  ],
-  "cost": "freemium",
-  "what": "Large immersion-learning community with heavy Anki use.",
-  "rules": "Community rules apply; promotion is not allowed without permission.",
-  "status": "ok",
-  "checked": "2026-11-13",
-  "source": "memory"
- },
- {
-  "chapter": "communities",
-  "name": "HTLAL / Language Learners Forum",
-  "url": "https://forum.language-learners.org/",
-  "submitUrl": "https://forum.language-learners.org/",
-  "tags": [
-   "language-learning",
-   "forum"
-  ],
-  "cost": "free",
-  "what": "Long-running forum of serious polyglots.",
-  "rules": "A dedicated section exists for resources; disclose that you made it.",
-  "status": "blocked",
-  "checked": "2026-11-13",
-  "source": "memory"
- },
- {
-  "chapter": "communities",
-  "name": "Lemmy language-learning communities",
-  "url": "https://lemmy.world/",
-  "tags": [
-   "language-learning",
-   "fediverse"
-  ],
-  "cost": "free",
-  "what": "Fediverse instance with language-learning communities.",
-  "rules": "Community rules vary.",
-  "status": "blocked",
-  "checked": "2026-11-13",
-  "source": "memory"
- },
- {
   "chapter": "reddit",
   "name": "r/droidappshowcase",
   "url": "https://www.reddit.com/r/droidappshowcase/",
@@ -3116,23 +2825,6 @@
   "cost": "free",
   "what": "The sister sub r/androidapps now sends all developer posts to.",
   "rules": "Made for developers showing Android apps and asking for feedback.",
-  "source": "mirror",
-  "status": "blocked",
-  "checked": "2026-11-13"
- },
- {
-  "chapter": "reddit",
-  "name": "r/AnkiAI",
-  "url": "https://www.reddit.com/r/AnkiAI/",
-  "tags": [
-   "reddit",
-   "spaced-repetition",
-   "ai",
-   "education"
-  ],
-  "cost": "free",
-  "what": "Where r/Anki's moderators send AI-related flashcard posts.",
-  "rules": "AI and flashcard tools are on-topic; read the sidebar before posting.",
   "source": "mirror",
   "status": "blocked",
   "checked": "2026-11-13"
